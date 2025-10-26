@@ -3,7 +3,6 @@ from pydantic_models import PredictRequest
 
 def predict(request: PredictRequest):
     data = prepare_data(request)
-    print("\nDati preparati\n\n\n")
     return make_prediction(data)
 
 
